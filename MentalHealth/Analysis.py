@@ -134,7 +134,7 @@ def time(dataset):
     plt.title("Average Sentiment by Month")
     plt.xlabel("Month")
     plt.ylabel("Sentiment Score")
-    plt.xticks(range(1, 13))  # Months 1-12
+    plt.xticks(range(1, 13)) 
     plt.show()
 
     hourly_sentiment = dataset.groupby('hour')['body_vader'].mean()
@@ -142,7 +142,6 @@ def time(dataset):
     plt.figure(figsize=(10, 6))
     hourly_sentiment_counts.plot(kind='bar', stacked=True, color=['red', 'green', 'blue'], width=0.8)
 
-    # Add labels and title
     plt.xlabel("Hour of Day", fontsize=12)
     plt.ylabel("Number of Posts", fontsize=12)
     plt.title("Sentiment Distribution by Hour of the Day", fontsize=14)
