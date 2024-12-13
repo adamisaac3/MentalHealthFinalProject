@@ -65,9 +65,9 @@ class Organize:
     def __init__(self):
 
         self.reddit = praw.Reddit(
-            client_secret='otSwuFuI1_nNroVpPqEb6K43y04crA',
-            client_id='yzo62BKProtirFS4MTFaEw',
-            user_agent='MentalHealthTracker -- U of U -- by u/EmbarrassedAd4795'
+            client_secret='REDDIT_CLIENT_SECRET',
+            client_id='REDDIT_CLIENT_ID',
+            user_agent='REDDIT_API_USER_AGENT'
         )
 
     def _get_date(self, utc):
